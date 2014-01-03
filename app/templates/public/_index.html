@@ -1,0 +1,20 @@
+<!doctype html>
+<html class="" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= _.capitalize(appName) %></title>
+    <meta name="description" content="Lightweight Marionette and Require.js Boilerplate Project">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/style_app.css"/>
+
+    <script type="text/javascript" src="js/bower_components/requirejs/require.js" data-main="js/app/Config/<%= _.capitalize(appName) %>.init.js"></script>
+
+
+</head>
+    <body>
+        <div data-role="page" id="app"></div>
+    </body>
+</html>

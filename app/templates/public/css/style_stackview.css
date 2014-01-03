@@ -1,0 +1,78 @@
+/* Stack View */
+
+/*
+ * Required Stack Styles.
+ *
+ * You must provide a container that flows to the
+ * correct size for the stacked content. This will
+ * force the stacks wrapper, and each stack item, 
+ * to fill the container.
+ */
+.stacks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.stacks .stack-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* supposedly this 1st line fixes the css3 
+     * animation flicker. It seems to work in webkit.
+     * placing this on the parent .stacks also removed
+     * the flicker, but it caused a very slight pause
+     * in the animation if 2 or more items were animating
+     * at the same time.
+     */
+    transform: translate3d(0,0,0);
+}
+/* End Required Stack Styles */
+
+/*
+ * Animations to transition stack items in/out.
+ *
+ * Use these exactly as is, or provide your own and
+ * set the following StackView options as needed:
+ * - `inTransitionClass`
+ * - `outTransitionClass`
+ * - `transitionDelay`
+ */
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slideInFromRight {
+    animation-name: slideInFromRight;
+}
+
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.slideOutToRight {
+    animation-name: slideOutToRight;
+}
+
+/* End Animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
