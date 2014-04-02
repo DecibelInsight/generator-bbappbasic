@@ -1,12 +1,12 @@
 {
-  "name": "generator-backbone-mrjs",
+  "name": "generator-bbappbasic",
   "version": "1.0.0",
   "description": "A Marionette-Backbone-RequireJS generator for Yeoman",
   "keywords": [
     "yeoman-generator", "Marionette.js", "Backbone.js", "Require.js", "Marionette and Require Boilerplate Lite"
   ],
-  "homepage": "https://github.com/mgmilcher/generator-backbone-mrjs",
-  "bugs": "https://github.com/mgmilcher/generator-backbone-mrjs/issues",
+  "homepage": "https://github.com/mgmilcher/generator-bbappbasic",
+  "bugs": "https://github.com/mgmilcher/generator-bbappbasic/issues",
   "author": {
     "name": "Marius Milcher",
     "email": "mgmilcher@gmail.com",
@@ -15,7 +15,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mgmilcher/generator-backbone-mrjs.git"
+    "url": "git://github.com/mgmilcher/generator-bbappbasic.git"
   },
   "scripts": {
     "test": "mocha"
